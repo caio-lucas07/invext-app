@@ -16,6 +16,22 @@ própria API de concorrência do Java.
 Foi feita a simulação de processamento da solicitação com `TimeUnit.SECONDS.sleep(10)` e também o processamento da fila (Queue do Java).
 
 
+## cURLs para testes (locais) da API de criação de solicitações
+
+`curl --location 'http://localhost:8080/solicitacoes' \
+--header 'Content-Type: application/json' \
+--data '{
+    "tipo": "PROBLEMA_CARTAO",
+    "descricao": "Problemas com meu cartao"
+}'`
+
+`curl --location 'http://localhost:8080/solicitacoes' \
+--header 'Content-Type: application/json' \
+--data '{
+    "tipo": "CONTRATACAO_EMPRESTIMO",
+    "descricao": "Contratação empréstimo"
+}'`
+
 ## Requirements
 
 For building and running the application you need:
