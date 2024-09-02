@@ -36,6 +36,15 @@ curl --location 'http://localhost:8080/solicitacoes' \
 }'
 ```
 
+```bash
+curl --location 'http://localhost:8080/solicitacoes' \
+--header 'Content-Type: application/json' \
+--data '{
+    "tipo": "OUTROS",
+    "descricao": "Problema ao abrir aplicativo"
+}'
+```
+
 ## Requirements
 
 For building and running the application you need:
