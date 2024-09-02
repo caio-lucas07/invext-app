@@ -13,7 +13,7 @@ automaticamente puxa da fila uma solicitação para ser processada por esse aten
 Foi usado ExecutorService para que o processo se dê de modo assíncrono e o ciclo de vida das threads seja gerenciado pela 
 própria API de concorrência do Java. 
 
-Foi feita uma simulação de processamento da solicitação com `TimeUnit.SECONDS.sleep(10)` e também o processamento da fila (Queue do Java).
+Foi feita a simulação de processamento da solicitação com `TimeUnit.SECONDS.sleep(10)` e também o processamento da fila (Queue do Java).
 
 
 ## Requirements
